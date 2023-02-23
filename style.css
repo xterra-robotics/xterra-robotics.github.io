@@ -95,6 +95,9 @@ a{
     #about{
         margin-top: 5%;
     }
+    .about-content{
+        width: 100%;
+    }
     .about-video{
         display: none;
     }
