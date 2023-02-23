@@ -12,28 +12,30 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Quadruped</title>
     <script src="https://kit.fontawesome.com/8e116dae2a.js" crossorigin="anonymous"></script>
+    <script src="myscript.js" defer></script>
 </head>
 <body>
     <section class="header sticky">
         <div>
-            <img src="" alt="Company logo">
+            <a href="./index.html" style="color: white;">
+                <i class="fab social fa-1x fa-android">Quadruped</i>
+            </a>
         </div>
         <div class="my-nav">
-            <!-- <a href="index.html">Home</a> -->
-            <a href="./pages/robots.html"></a>
-            <a href="#about">About</a>
-            <a href="./pages/product.html">Product</a>
-            <a href="#robots">Robots</a>
-            <a href="./pages/team.html">Team</a>
-            <a href="./pages/open-positions.html">Positions</a>
-            <a href="#footer">Contact</a>
+            <button id="bar" class="" onclick="myFunction();"><i class="fa fa-bars fa-1.5x" ></i></button>
+            <a class="Links hidden" href="index.html">Home</a>
+            <a class="Links hidden" href="./pages/product.html">Product</a>
+            <a class="Links hidden" href="#robots">Robots</a>
+            <a class="Links hidden" href="./pages/team.html">Team</a>
+            <a class="Links hidden" href="./pages/open-positions.html">Positions</a>
+            <a class="Links hidden" href="#footer">Contact</a>
         </div>
     </section>
-    <div class="wrapper">
-        <div class="main-text center">
+    
+        <!-- <div class="main-text center">
             <h1 class="bold">Quadruped robot</h1>
             <h5>A robot with four legs</h5>
-        </div>
+        </div> -->
         <section id="about" class="about">
             
             <div class="Container">
@@ -47,9 +49,10 @@
                 </div>
             </div>
         </section>
+        <div class="wrapper">
         <section id="robots">
             <h1>We are currently working on these two robots</h1>
-            <div class="Container">
+            <div class="Container r-Container">
                 <div class="robot-card">
                     <a href="./robots/quadruped.html">
                         <div class="r-details center">
@@ -77,7 +80,7 @@
             <i class="fab social fa-2x fa-instagram"></i>
             <i class="fab social fa-2x fa-twitter"></i>
             <i class="fas social fa-2x fa-envelope"></i>
-            <p style="color: #8f8f8f; font-size: 2rem; font-weight: bold;">© Copyright 2023 Quadruped</p>
+            <p style="color: #8f8f8f; font-size: 2rem; font-weight: bold;">© Copyright 2023 Quadruped. All rights reserved <a href="https://sarthak759.github.io/portfolio-website/"><b>Sarthak</b></a></p>
         </footer>
 </body>
 </html>

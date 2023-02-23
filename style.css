@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif!important;
     background-color: rgb(234, 231, 231)!important;
 }
 .wrapper{
@@ -30,7 +30,6 @@ a{
     text-align: center;
     margin: auto;
 }
-
 /* header */
 .header{
     background-color: black;
@@ -49,11 +48,29 @@ a{
     margin: auto 5%;
     color: white!important;
 }
-
+.my-nav>button{
+    display: none;
+}
+@media screen and (max-width: 680px) {
+    .my-nav>button{
+        display: block;
+    }
+    .my-nav{
+        flex-direction: column;
+        right: 0%;
+        background-color: black;
+        padding-right: 5%;
+    }
+    
+    .hidden{
+        display: none;
+    }
+}
 /* about */
+
 .about{
     background-image: url("https://wallpapercave.com/wp/wp1927677.jpg");
-    border-radius: 2%;
+    /* border-radius: 2%; */
     z-index: -1;
     padding: 2%;
     margin-bottom: 2%;
@@ -74,7 +91,17 @@ a{
 .about-video>:nth-child(1){
     margin-top: 10%;
 }
-
+@media screen and (max-width: 600px) {
+    #about{
+        margin-top: 5%;
+    }
+    .about-video{
+        display: none;
+    }
+    .about>div{
+        flex-direction: column;
+    }
+}
 /* product */
 #product{
     margin-top: 4%;
@@ -99,8 +126,16 @@ a{
 .robot{
    margin: -10% -8%;
 }
-
+@media screen and (max-width: 680px) {
+    .p-Container{
+        flex-direction: column;
+    }
+    .p-wrapper{
+        width: 100%;
+    }
+}
 /* robot */
+
 #robots{
     margin-bottom: 2%;
 }
@@ -119,17 +154,32 @@ a{
     padding: 1% 2%;
 }
 .r-img1{
-    transform: scale(1.35);
-    margin: 7.5% 5%;
-    
+    width: 421.2px;
+    height: 218.7px;
 }
 .r-img2{
-    transform: scale(0.55,0.5);
-    margin-left: -39.5%;
-    margin-top: -23%;
-    margin-bottom: -20%;
+    
+    width: 421.2px;
+    height: 218.7px;
+    
 }
-
+@media screen and (max-width: 680px) {
+    .r-Container{
+        flex-direction: column;
+    }
+    .robot-card{
+        width: 100%;
+        margin: 2% 1%;
+    }
+    .r-img1{
+        width: 100%;
+        height: 90%;
+    }
+    .r-img2{
+        width: 100%;
+        height: 90%;
+    }
+}
 /* Quadruped robot */
 .q-robot{
     margin: 2% 15%;
@@ -163,16 +213,33 @@ a{
     text-align: center;
     margin-top: 3.5%;
 }
-.carousel-item{
-    padding: 7% 15%;
+.t-cont{
+    display: flex;
 }
-
+.t-card{
+    width: 30%;
+    border-radius: 1%;
+    background-color: white;
+    color: black;
+    padding: 2% 1%;
+    margin: 1%;
+}
+.t-card:hover{
+    box-shadow: 0 0 15px rgb(37, 36, 36);
+    transform: scale(1.05);
+}
+.t-card>img{
+    width: 90%;
+}
 /* footer */
 #footer{
     padding: 15% 7%;
     text-align: center;
     background-color: rgb(44, 43, 43);
     color: white;
+}
+#footer>p>a{
+    color: #8f8f8f;
 }
 .social{
     margin: 0 1.5% 2%;
