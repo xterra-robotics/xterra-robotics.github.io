@@ -90,13 +90,11 @@ a{
   .dropdown-content a {
     float: none;
     color: black;
-    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
     text-align: left;
   }
   .dropdown:hover .dropdown-content{
-    /* background-color: cyan; */
     display: block;
   }
   #bar{
@@ -140,11 +138,8 @@ a{
     #about{
         margin-top: 5%;
     }
-    .about-content{
-        width: 100%;
-    }
-    .about-video{
-        display: none;
+    .bolder{
+        font-size: 200%;
     }
     .about>div{
         flex-direction: column;
@@ -174,7 +169,14 @@ a{
     border-radius: 5%;
     box-shadow: 3px 3px 5px 5px rgba(165, 111, 53, 0.414);
 }
-
+@media screen and (max-width: 680px) {
+    .o-div{
+        flex-direction: column;
+    }
+    .o-pannel{
+        margin-bottom: 2%;
+    }
+}
 /* review */
 .r-div{
     padding: 2% 15%;
@@ -262,7 +264,7 @@ a{
     background-color: white;
     box-shadow: 0 0 15px rgb(119, 119, 119);
     padding: 4% 7%;
-    border-radius: 0.1%;
+    border-radius: 0.5%;
     margin: 2%;
 }
 .p-container{
@@ -277,7 +279,7 @@ a{
     /* color: orange; */
 }
 .p-container>:nth-child(1){
-    width: 5%;
+    width: 10%;
     color: orange;
 }
 .p-right{
@@ -285,6 +287,12 @@ a{
 }
 .apply-btn{
     margin: auto 40%;
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 1%;
+    font-weight: 550;
+    border-radius: 5%;
 }
 
 /* team */
@@ -335,6 +343,14 @@ a{
     margin: 1% 2%;
     font-size: xx-large;
     color: orange;
+}
+@media screen and (max-width: 680px) {
+    .t-cont{
+        flex-direction: column;
+    }
+    .t-card{
+        width: 100%;
+    }
 }
 /* footer */
 #footer{
