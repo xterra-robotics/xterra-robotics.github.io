@@ -16,71 +16,100 @@
 </head>
 <body>
     <section class="header sticky">
-        <div>
-            <a href="./index.html" style="color: white;">
-                <i class="fab social fa-1x fa-android">Quadruped</i>
-            </a>
-        </div>
+        <a href="./index.html" style="color: white;">
+            <img class="logo" src="./images/DronaVyuh.png" alt="">
+        </a>
         <div class="my-nav">
             <button id="bar" class="" onclick="myFunction();"><i class="fa fa-bars fa-1.5x" ></i></button>
             <a class="Links hidden" href="index.html">Home</a>
-            <a class="Links hidden" href="./pages/product.html">Product</a>
-            <a class="Links hidden" href="#robots">Robots</a>
+            <!-- <a class="Links hidden" href="./pages/product.html">Product</a> -->
+            <div class="dropdown Links hidden">
+                <button class="dropbtn">Robots
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="robots/quadruped.html">Quadruped</a>
+                    <a href="robots/actuator.html">Actuator</a>
+                </div>
+            </div>
             <a class="Links hidden" href="./pages/team.html">Team</a>
             <a class="Links hidden" href="./pages/open-positions.html">Positions</a>
             <a class="Links hidden" href="#footer">Contact</a>
         </div>
     </section>
-    
-        <!-- <div class="main-text center">
-            <h1 class="bold">Quadruped robot</h1>
-            <h5>A robot with four legs</h5>
-        </div> -->
         <section id="about" class="about">
-            
             <div class="Container">
                 
                 <div class="about-content ">
-                    <h1>Some random heading</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur neque, accusantium, quae odio similique numquam nesciunt repudiandae obcaecati eius dolore possimus deleniti inventore quas rerum ducimus qui, consequuntur esse vitae ratione provident explicabo. Nulla delectus veniam aliquid reprehenderit qui sed! Aspernatur quam suscipit assumenda corrupti exercitationem fuga quibusdam quas deserunt.</p>
-                </div>
-                <div class="about-video">
-                    <iframe class="center" src="https://youtube.com/embed/QEUPg4rToPg?autoplay=1&loop=1&mute=1" width="620" height="350"></iframe>
+                    <h1 class="bolder">Dronavyuh</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur neque, accusantium, quae </p>
                 </div>
             </div>
         </section>
-        <div class="wrapper">
-        <section id="robots">
-            <h1>We are currently working on these two robots</h1>
-            <div class="Container r-Container">
-                <div class="robot-card">
-                    <a href="./robots/quadruped.html">
-                        <div class="r-details center">
-                            
-                            <img class="r-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8KqexuSk_7MB7SzPy4rAR1qlT2J1CDV58w&usqp=CAU" alt="">
-                            <h1>Quadruped</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel odio, quos voluptates illo non officia laboriosam dignissimos error itaque?</p>
-                        </div>
-                    </a>
+        <div class="wrapper"></div>
+        <section id="overview">
+            <div class="o-wrapper">
+                <div class="o-div">
+                    <div class="o-pannel">
+                        <i class="fa fa-android fa-8x"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="o-pannel">
+                        <i class="fa fa-car fa-8x"></i>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div class="robot-card">
-                    <a href="./robots/actuator.html">
-                        <div class="r-details center">
-                            <img class="r-img2" src="https://dp9eps5gd5xd0.cloudfront.net/images/Article_Images/ImageForArticle_292(1).jpg" alt="">
-                            <h1>Actuator</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel odio, quos voluptates illo non officia laboriosam dignissimos error itaque?</p>
-                        </div>
-                    </a>
+                <div class="o-div">
+                    <div class="o-pannel">
+                        <i class="fa fa-gears fa-8x"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="o-pannel">
+                        <i class="fa fa-users fa-8x"></i>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section id="review">
+            <div class="r-div">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet assumenda eum dolorum nesciunt id tenetur ad adipisci vitae inventore.</p>
             </div>
         </section>
     </div>
         <footer id="footer">
-            <i class="fab social fa-2x fa-facebook"></i>
-            <i class="fab social fa-2x fa-instagram"></i>
-            <i class="fab social fa-2x fa-twitter"></i>
-            <i class="fas social fa-2x fa-envelope"></i>
-            <p style="color: #8f8f8f; font-size: 2rem; font-weight: bold;">© Copyright 2023 Quadruped. All rights reserved <a href="https://sarthak759.github.io/portfolio-website/"><b>Sarthak</b></a></p>
+            <div class="Container">
+                <div class="f-sections">
+                    <h1>Dronavyuh</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <p><strong>Phone: </strong>+91 9212312321</p>
+                    <p><strong>Email: </strong>info@email.com</p>
+                </div>
+                <div class="f-sections">
+                    <u>Useful links</u>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Quadruped</a></li>
+                    <li><a href="">Actuator</a></li>
+                    <li><a href="">Open-position</a></li>
+                    <li><a href="">Team</a></li>
+                </div>
+                <div class="f-sections">
+                    <u>Policies</u>
+                    <li><a href="">Terms and conditions</a></li>
+                    <li><a href="">Website Policy</a></li>
+                    <li><a href="">Policy for buyers</a></li>
+                </div>
+                <div class="f-sections">
+                    <h4>Our Social Network</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, eum.</p>
+                    <i class="fab social fa-1x fa-facebook"></i>
+                    <i class="fab social fa-1x fa-instagram"></i>
+                    <i class="fab social fa-1x fa-twitter"></i>
+                    <i class="fas social fa-1x fa-envelope"></i>
+                </div>
+            </div>
+            <p>© 2023, All rights reserved. Designed by <a href="https://sarthak759.github.io/portfolio-website/"><b>Sarthak</b></a></p>
         </footer>
 </body>
 </html>

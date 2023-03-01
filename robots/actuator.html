@@ -17,18 +17,22 @@
 
 </head>
 <body>
-    <section class="header sticky" style="left: 0">
-        <div>
-            <a href="./index.html" style="color: white;">
-                <i class="fab social fa-1x fa-android">Quadruped</i>
-            </a>
-        </div>
+    <section class="header sticky">
+        <a href="../index.html" style="color: white;">
+            <img class="logo" src="../images/DronaVyuh.png" alt="">
+        </a>
         <div class="my-nav">
             <button id="bar" class="" onclick="myFunction();"><i class="fa fa-bars fa-1.5x" ></i></button>
             <a class="Links hidden" href="../index.html">Home</a>
-            <a class="Links hidden" href="./quadruped.html">Quadruped</a>
-            <!-- <a href="#about">About</a> -->
-            <a class="Links hidden" href="../pages/product.html">Product</a>
+            <div class="dropdown Links hidden">
+                <button class="dropbtn">Robots
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./quadruped.html">Quadruped</a>
+                    <a href="./actuator.html">Actuator</a>
+                </div>
+            </div>
             <a class="Links hidden" href="../pages/team.html">Team</a>
             <a class="Links hidden" href="../pages/open-positions.html">Positions</a>
             <a class="Links hidden" href="#footer">Contact</a>
@@ -78,11 +82,37 @@
         </div>
     </div>
     <footer id="footer">
-        <i class="fab social fa-2x fa-facebook"></i>
-        <i class="fab social fa-2x fa-instagram"></i>
-        <i class="fab social fa-2x fa-twitter"></i>
-        <i class="fas social fa-2x fa-envelope"></i>
-        <p style="color: #8f8f8f; font-size: 2rem; font-weight: bold;">© Copyright 2023 Quadruped. All rights reserved <a href="https://sarthak759.github.io/portfolio-website/"><b>Sarthak</b></a></p>
+        <div class="Container">
+            <div class="f-sections">
+                <h1>Dronavyuh</h1>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p><strong>Phone: </strong>+91 9212312321</p>
+                <p><strong>Email: </strong>info@email.com</p>
+            </div>
+            <div class="f-sections">
+                <u>Useful links</u>
+                <li><a href="">Home</a></li>
+                <li><a href="">Quadruped</a></li>
+                <li><a href="">Actuator</a></li>
+                <li><a href="">Open-position</a></li>
+                <li><a href="">Team</a></li>
+            </div>
+            <div class="f-sections">
+                <u>Policies</u>
+                <li><a href="">Terms and conditions</a></li>
+                <li><a href="">Website Policy</a></li>
+                <li><a href="">Policy for buyers</a></li>
+            </div>
+            <div class="f-sections">
+                <h4>Our Social Network</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, eum.</p>
+                <i class="fab social fa-1x fa-facebook"></i>
+                <i class="fab social fa-1x fa-instagram"></i>
+                <i class="fab social fa-1x fa-twitter"></i>
+                <i class="fas social fa-1x fa-envelope"></i>
+            </div>
+        </div>
+        <p>© 2023, All rights reserved. Designed by <a href="https://sarthak759.github.io/portfolio-website/"><b>Sarthak</b></a></p>
     </footer>
 </body>
 </html>
