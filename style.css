@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif!important;
     background-color: rgb(234, 231, 231)!important;
-    font-size: x-large!important;
+    font-size: large!important;
 }
 .wrapper{
     margin: auto 2%;
@@ -21,11 +21,12 @@ body{
 
 .bold{
     font-weight: 800;
-    font-size: 50px;
+    font-size: 45px;
+    color: rgb(74, 73, 73);
 }
 .bolder{
     font-weight: 1000;
-    font-size: 80px;
+    font-size: 75px;
 }
 a{
     text-decoration: none!important;
@@ -128,8 +129,8 @@ a{
 .about-content{
     text-align: center;
     color: orange;
-    margin: auto 17%;
-    margin-top: 15%;
+    margin: auto 25%;
+    margin-top: 10%;
 }
 .about-content>:nth-child(1){
     margin-bottom: 10%;
@@ -152,12 +153,12 @@ a{
 .o-wrapper{
     /* display: flex; */
     background-color: orange;
-    padding: 7% 15%;
+    padding: 5% 15%;
 }
 .o-div{
     display: flex;
     justify-content: space-around;
-    margin: 2% 0;
+    margin: 4% 0;
 }
 .o-pannel{
     background-color: white;
@@ -168,6 +169,11 @@ a{
     text-align: center;
     border-radius: 5%;
     box-shadow: 3px 3px 5px 5px rgba(165, 111, 53, 0.414);
+}
+.o-pannel:hover{
+    box-shadow: 0 0 15px rgb(37, 36, 36);
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
 @media screen and (max-width: 680px) {
     .o-div{
@@ -233,7 +239,7 @@ a{
 /* Quadruped robot */
 .q-robot{
     margin: 2% 15%;
-    margin-top: 6%;
+    margin-top: 8%;
 }
 .collage{
     margin-top: 5%;
@@ -256,6 +262,9 @@ a{
 #positions{
     margin-top: 5%;
     padding: 0 5%;
+}
+.p-div{
+    padding-top: 3%;
 }
 .p-heading{
     text-align: center;
@@ -300,7 +309,7 @@ a{
     background-color: rgb(224, 223, 222);
     color: rgb(74, 73, 73);
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 4% 13%;
 }
 .t-cont{
@@ -314,11 +323,11 @@ a{
     padding: 1.5% 1%;
     margin: 1%;
 }
-.t-card:hover{
+/* .t-card:hover{
     box-shadow: 0 0 15px rgb(37, 36, 36);
     transform: scale(1.05);
     transition-duration: 0.5s;
-}
+} */
 .t-card>img{
     width: 95%;
     height: 70%;
