@@ -41,15 +41,21 @@ a{
 /* header */
 .header{
     background-color: white;
-    /* padding-top: 1%; */
     color: black;
     display: flex;
     margin-bottom: 2%;
 }
 .logo{
-    width: 20%;
-    height: 80%;
-    margin-left: 10%;
+    width: 15%;
+    height: 60%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+span{
+    font-weight: bold;
+    font-size: small;
+    position: absolute;
+    bottom: 20%;
 }
 .my-nav{
     margin-top: 1%;
@@ -82,7 +88,10 @@ a{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 160px;
+    /* min-width: 160px; */
+    margin-top: 2%;
+    padding: 5%;
+    width: 111%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -316,7 +325,7 @@ a{
     display: flex;
 }
 .t-card{
-    width: 33%;
+    width: 25%;
     border-radius: 2%;
     background-color: white;
     color: black;
@@ -330,7 +339,7 @@ a{
 } */
 .t-card>img{
     width: 95%;
-    height: 70%;
+    height: 60%;
     border-radius: 2%;
 }
 .t-card>h1{
@@ -371,7 +380,12 @@ a{
 .f-sections{
     width: 20%;
     text-align: left;
+    /* background-color: cyan; */
     list-style-type: none;
+}
+.useful{
+    /* background-color: cyan; */
+    margin-left: 8%;
 }
 .f-sections>p>strong{
     color: orange;
@@ -388,5 +402,5 @@ a{
     color: #8f8f8f;
 }
 .social{
-    margin: 0 1.5% 2%;
+    margin-bottom: 4%;
 }
