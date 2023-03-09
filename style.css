@@ -176,7 +176,7 @@ span{
     margin: 0 1%;
     padding: 4% 2%;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 1%;
     box-shadow: 3px 3px 5px 5px rgba(165, 111, 53, 0.414);
 }
 .o-pannel:hover{
@@ -376,16 +376,21 @@ span{
     text-align: center;
     background-color: rgb(44, 43, 43);
     color: white;
+    font-size: small;
 }
 .f-sections{
     width: 20%;
     text-align: left;
-    /* background-color: cyan; */
     list-style-type: none;
 }
 .useful{
-    /* background-color: cyan; */
     margin-left: 8%;
+}
+.network{
+    margin-right: -5%;
+}
+.network>p{
+    margin: 0;
 }
 .f-sections>p>strong{
     color: orange;
