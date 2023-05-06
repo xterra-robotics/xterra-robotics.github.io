@@ -1,5 +1,5 @@
 body{
-    font-family: 'Poppins'!important;
+    font-family: 'League Spartan'!important;
     background-color: rgb(234, 231, 231)!important;
     font-size: larger!important;
 }
@@ -132,7 +132,6 @@ span{
     background-size: cover;
     z-index: -1;
     padding: 2%;
-    /* margin-bottom: 2%; */
     height: 100vh;
 }
 .about-content{
@@ -151,6 +150,9 @@ span{
     .bolder{
         font-size: 200%;
     }
+    .about-content{
+        margin: 25% 0;
+    }
     .about>div{
         flex-direction: column;
     }
@@ -162,7 +164,7 @@ span{
 .o-wrapper{
     /* display: flex; */
     background-color: orange;
-    padding: 5% 15%;
+    padding: 5% 20%;
 }
 .o-div{
     display: flex;
@@ -188,17 +190,25 @@ span{
     .o-div{
         flex-direction: column;
     }
+    .o-wrapper{
+        padding: 5%;
+    }
     .o-pannel{
         margin-bottom: 2%;
     }
 }
 /* review */
 .r-div{
-    padding: 2% 15%;
+    padding: 2% 20%;
+}
+@media screen and (max-width:680px) {
+    .r-div{
+        padding: 2% 5%;
+    }
 }
 /* Quadruped robot */
 .q-robot{
-    margin: 2% 13.5%;
+    margin: 2% 25%;
 }
 .q-img{
     width: 100%!important;
@@ -213,34 +223,48 @@ span{
 .q-carousel button{
     margin-bottom: 10%;
 }
-.feature-list{
-    list-style-type: none;
-    position: relative;
-    line-height: 200%;
+.r-abt{
+    margin: 0 -2%;
+    padding: 2% 25%;
+    background-color: white;
 }
-.feature-list:before{
-    content: ' ';
-    background: orange;
-    display: inline-block;
-    position: absolute;
-    left: 9px;
-    width: 2px;
-    height: 100%;
+.r-about{
+    display: flex;
+    margin-top: 4%;
 }
-.feature-list>li:before{
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid orange;
-    left: 0px;
-    width: 20px;
-    height: 20px;
+.a-left{
+    width: 50%;
+    text-align: center;
+    padding-right: 2%;
+    margin: auto;
 }
+.r-a-img{
+    width: 100%;
+}
+.a-right{
+    width: 50%;
+    text-align: center;
+    padding-left: 2%;
+    margin: auto;
+}
+@media screen and (max-width: 680px) {
+    .r-abt{
+        padding: 2% 5%;
+    }
+    .q-robot{
+        margin: 2% 15%;
+    }
+}
+
 /* table */
 .r-table{
     margin-top: 4%;
+    /* padding: 0 10%; */
+}
+@media screen and (max-width: 680px){
+    .r-table{
+        margin: 0 -20%;
+    }
 }
 .r-table>:nth-child(1){
     font-weight: 800;
@@ -301,9 +325,9 @@ table{
 .p-wrapper{
     background-color: white;
     box-shadow: 0 0 15px rgb(119, 119, 119);
-    padding: 4% 7%;
+    padding: 4% 5%;
     border-radius: 0.5%;
-    margin: 2%;
+    margin: 2% 20%;
 }
 .p-container{
     display: flex;
@@ -315,6 +339,7 @@ table{
 .p-container>:nth-child(1){
     width: 10%;
     color: orange;
+    
 }
 .p-right{
     width: 95%;
@@ -332,6 +357,18 @@ table{
     border-radius: 5%;
 }
 
+@media screen and (max-width:680px) {
+    #positions{
+        margin-top: 7%;
+    }
+    .p-wrapper{
+        margin: 2% 5%;
+    }
+    .p-container>:nth-child(1){
+        width: 20%;
+    }
+}
+
 /* team */
 #team{
     background-color: rgb(224, 223, 222);
@@ -339,6 +376,11 @@ table{
     text-align: center;
     margin-top: 3%;
     padding: 4% 13%;
+}
+@media screen and (max-width: 680px) {
+    #team{
+        margin-top: 5%;
+    }
 }
 .t-cont{
     display: flex;
@@ -368,14 +410,15 @@ table{
 }
 .socials{
     display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
+    justify-content: space-around;
+    padding: 0;
 }
 .socials>i{
     margin: 1% 2%;
-    font-size: xx-large;
+    font-size: 250%;
     color: orange;
 }
+
 @media screen and (max-width: 680px) {
     .t-cont{
         flex-direction: column;
@@ -422,4 +465,9 @@ table{
 }
 .social{
     margin-bottom: 4%;
+}
+@media screen and (max-width:680px) {
+    #footer{
+        padding: 2% 5%;
+    }
 }
