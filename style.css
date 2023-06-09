@@ -48,8 +48,10 @@ a{
     /* padding: 1%; */
 }
 .logo{
-    width: 12%;
-    height: 60%;
+/*     width: 12%;
+    height: 60%; */
+    width: 2%;
+    height: 3%;
     margin-left: 5%;
     margin-top: 2%;
 }
