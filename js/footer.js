@@ -9,11 +9,11 @@ var footer = `
                 </div>
                 <div class="f-sections useful">
                     <u>Useful links</u>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="../robots/quadruped.html">Svan M2</a></li>
-                    <li><a href="../robots/actuator.html">QDD A1</a></li>
-                    <li><a href="./pages/open-positions.html">Career</a></li>
-<!--                     <li><a href="./pages/team.html">Team</a></li> -->
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/robots/quadruped.html">Svan M2</a></li>
+                    <li><a href="/robots/actuator.html">QDD A1</a></li>
+                    <li><a href="/pages/open-positions.html">Career</a></li>
+<!--                     <li><a href="/pages/team.html">Team</a></li> -->
                 </div>
 <!--                 <div class="f-sections">
                     <u>Policies</u>

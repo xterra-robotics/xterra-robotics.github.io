@@ -10,6 +10,6 @@ var navbar = `
                     <a href="/robots/actuator.html">Actuator</a>
                 </div>
             </div>
-            <a class="Links hidden" href="./pages/open-positions.html">Career</a>
+            <a class="Links hidden" href="/pages/open-positions.html">Career</a>
             <a class="Links hidden" href="#footer">Contact</a>
 `;
