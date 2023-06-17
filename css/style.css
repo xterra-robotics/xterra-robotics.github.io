@@ -420,6 +420,7 @@ table{
   }
 /* open positions */
 #positions{
+/*    font-family: 'League Spartan'!important;*/
     margin-top: 5%;
     padding: 0 5%;
 }
@@ -431,9 +432,9 @@ table{
 }
 .p-wrapper{
     background-color: white;
-    box-shadow: 0 0 15px rgb(119, 119, 119);
+/*    box-shadow: 0 0 15px rgb(119, 119, 119);*/
     padding: 4% 5%;
-    border-radius: 0.5%;
+    border-radius: 4%;
     margin: 2% 20%;
 }
 .p-container{
@@ -442,7 +443,9 @@ table{
 }
 .p-container h1{
     font-weight: 550;
+    text-align: center;
 }
+
 .p-container>:nth-child(1){
     width: 10%;
     color: orange;
@@ -452,6 +455,8 @@ table{
     width: 95%;
 }
 .apply-btn-div{
+    position:relative;
+    margin-top: 5%;
     display: flex;
     justify-content: center;align-items: center;
 }
