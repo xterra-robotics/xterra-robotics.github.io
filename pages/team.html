@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Quadruped</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&display=swap" rel="stylesheet">
+    
+    <script src="js/footer.js"></script>
+    <script src="js/navbar.js"></script>
 
 </head>
 <body>
@@ -27,22 +30,11 @@
         <a href="../index.html" style="color: orange; padding-left: 1%; padding-top: 1%; font-weight: 600;">
             xTerra
         </a>
-        <div class="my-nav">
-            <button id="bar" class="" onclick="myFunction();"><i class="fa fa-bars fa-1.5x" ></i></button>
-            <a class="Links hidden" href="../index.html">Home</a>
-            <div class="dropdown Links hidden">
-                <button class="dropbtn">Robots
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../robots/quadruped.html">Quadruped</a>
-                    <a href="../robots/actuator.html">Actuator</a>
-                </div>
-            </div>
-            <a class="Links hidden" href="./team.html">Team</a>
-            <a class="Links hidden" href="./open-positions.html">Positions</a>
-            <a class="Links hidden" href="#footer">Contact</a>
+        <div class="my-nav" id="navbar">
         </div>
+        <script>
+            document.getElementById('navbar').innerHTML = navbar;
+        </script>
     </section>
     <section id="team">
         <h1 class="bold">KNOW THE TEAM</h1>
@@ -162,36 +154,9 @@
         </div>
     </section>
     <footer id="footer">
-        <div class="Container">
-            <div class="f-sections">
-                <h1>xTerra</h1>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <p><strong>Phone: </strong>+91 9212312321</p>
-                <p><strong>Email: </strong>info@email.com</p>
-            </div>
-            <div class="f-sections useful">
-                <u>Useful links</u>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../robots/quadruped.html">Quadruped</a></li>
-                <li><a href="../robots/actuator.html">Actuator</a></li>
-                <li><a href="./open-positions.html">Open-position</a></li>
-                <li><a href="./team.html">Team</a></li>
-            </div>
-            <div class="f-sections">
-                <u>Policies</u>
-                <li><a href="">Terms and conditions</a></li>
-                <li><a href="">Website Policy</a></li>
-                <li><a href="">Policy for buyers</a></li>
-            </div>
-            <div class="f-sections network">
-                <p>Our Social Network<p>
-                    <p><i class="fab social fa-1x fa-facebook"></i> Facebook</p>
-                    <p><i class="fab social fa-1x fa-instagram"></i> Instagram</p>
-                    <p><i class="fab social fa-1x fa-twitter"></i> Twitter</p>
-                    <p><i class="fas social fa-1x fa-envelope"></i> Email</p>
-            </div>
-        </div>
-        <p>© 2023, All rights reserved. Designed by <a href="https://sarthak759.github.io/portfolio-website/"><b>Sarthak</b></a></p>
     </footer>
+    <script>
+        document.getElementById('footer').innerHTML = footer;
+    </script>
 </body>
 </html>

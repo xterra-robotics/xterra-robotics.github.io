@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
@@ -18,33 +18,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    
+    <script src="js/footer.js"></script>
+    <script src="js/navbar.js"></script>
 </head>
     
 <body>
     <section class="header sticky">
         <a href="./index.html" style="color:  #4e148c;">
-            <img class="logo" src="./images/xTerra.png" alt=""><span>xTerra</span>
+            <img class="logo" src="images/xTerra.png" alt=""><span>xTerra</span>
         </a>
 <!--         <a href="./index.html" style="color: orange; padding-left: 1%; padding-top: 1%; font-weight: 600;">
             xTerra
         </a> -->
-        <div class="my-nav">
-            <button id="bar" class="" onclick="myFunction();"><i class="fa fa-bars fa-1.5x" ></i></button>
-            <a class="Links hidden" href="index.html">Home</a>
-            <!-- <a class="Links hidden" href="./pages/product.html">Product</a> -->
-            <div class="dropdown Links hidden">
-                <button class="dropbtn">Robots
-<!--                    <i class="fa fa-caret-down"></i>-->
-                </button>
-                <div class="dropdown-content">
-                    <a href="robots/quadruped.html">Quadruped</a>
-                    <a href="robots/actuator.html">Actuator</a>
-                </div>
-            </div>
-<!--             <a class="Links hidden" href="./pages/team.html">Team</a> -->
-            <a class="Links hidden" href="./pages/open-positions.html">Career</a>
-            <a class="Links hidden" href="#footer">Contact</a>
-        </div>
+        <div class="my-nav" id="navbar"></div>
+        <script>
+            document.getElementById('navbar').innerHTML = navbar;
+        </script>
     </section>
         <section id="about" class="about">
             <div class="Container">
@@ -95,40 +85,10 @@
                 <p>We build robots that empower people to perform tasks safer, faster, and more efficiently than ever before.</p>
             </div>
         </section>
-    </div>
         <footer id="footer">
-            <div class="Container-footer">
-                <div class="f-sections">
-                    <h2 style="font-weight: bold">xTerra Robotics</h2>
-                    <p>G - 508/11 Avas Vikas, No. 1 Panki Road, Kalyanpur
-                        Kanpur, Kanpur Nagar-208017, Uttar Pradesh, India</p>
-                    <p><strong>Phone: </strong>+91 9454997163</p>
-                    <p><strong>Email: </strong>info@xterrarobotics.com</p>
-                </div>
-                <div class="f-sections useful">
-                    <u>Useful links</u>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="../robots/quadruped.html">Svan M2</a></li>
-                    <li><a href="../robots/actuator.html">QDD A1</a></li>
-                    <li><a href="./pages/open-positions.html">Career</a></li>
-<!--                     <li><a href="./pages/team.html">Team</a></li> -->
-                </div>
-<!--                 <div class="f-sections">
-                    <u>Policies</u>
-                    <li><a href="">Terms and Conditions</a></li>
-                    <li><a href="">Website Policy</a></li>
-                    <li><a href="">Policy for Buyers</a></li>
-                </div> -->
-                <div class="f-sections network">
-                    <p>Our Social Network<p>
-<!--                     <p><i class="fab social fa-1x fa-facebook"></i> Facebook</p> -->
-                    <p><i class="fab social fa-1x fa-instagram"></i> Instagram</p>
-<!--                     <p><i class="fab social fa-1x fa-twitter"></i> Twitter</p> -->
-                    <p><i class="fas social fa-1x fa-envelope"></i> Email</p>
-                    
-                </div>
-            </div>
-            <p>© 2023, All rights reserved.</p>
         </footer>
+        <script>
+            document.getElementById('footer').innerHTML = footer;
+        </script>
 </body>
 </html>
