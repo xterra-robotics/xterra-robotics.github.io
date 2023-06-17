@@ -303,7 +303,7 @@ span{
     color: black;
 }
 .q-carousel button{
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 .r-abt{
     margin: 0 -2%;
@@ -317,7 +317,7 @@ span{
 .a-left{
     width: 50%;
     text-align: center;
-    padding-right: 2%;
+    padding-right: 1%;
     margin: auto;
 }
 .r-a-img{
@@ -326,7 +326,7 @@ span{
 .a-right{
     width: 50%;
     text-align: center;
-    padding-left: 2%;
+    padding-left: 1%;
     margin: auto;
 }
 @media screen and (max-width: 800px) {
@@ -341,7 +341,10 @@ span{
 /* table */
 .r-table{
     margin-top: 4%;
-    /* padding: 0 10%; */
+/*    padding: 0 10%; */
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 @media screen and (max-width: 1000px){
     .r-table{
@@ -389,7 +392,7 @@ table{
     padding: 1%;
     color: #4e148c;
     font-weight: 1000;
-    margin: auto 43%;
+    margin: auto 45%;
     border: none;
     border-radius: 5%;
     margin-bottom: 1%;
