@@ -281,7 +281,15 @@ span{
 /* review */
 .r-div{
     padding: 2% 20%;
-    background-color: #fff5f9
+    background-color: #fff5f9;
+    font-size: 1.3em;
+    text-align: center;
+}
+.r-div h2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 2em;
 }
 @media screen and (max-width:680px) {
     .r-div{
