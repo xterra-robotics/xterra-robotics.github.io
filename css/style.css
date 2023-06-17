@@ -81,7 +81,7 @@ span{
     position: absolute;
     display: flex;
     color: #4e148c;
-    right: 25%;
+    right: 15%;
 }
 .my-nav a{
     margin: auto 10%;
@@ -244,7 +244,7 @@ span{
 .o-wrapper{
     /* display: flex; */
     background-color: #ffde59;
-    padding: 5% 20%;
+    padding: 5% 25%;
 }
 .o-div{
     display: flex;
@@ -256,7 +256,7 @@ span{
     /* color: rgb(24, 4, 124); */
     color: #4e148c;
     margin: 0 1%;
-    padding: 4% 2%;
+    padding: 2% 1%;
     text-align: center;
     border-radius: 2.5%;
     flex-basis: 40%;
@@ -436,10 +436,10 @@ table{
 }
 .apply-btn{
     border: none;
-    background-color: orange;
-    color: white;
+    background-color: #ffde59;
+    color: #4e148c;
     padding: 1%;
-    font-weight: 550;
+    font-weight: 1000;
     border-radius: 5%;
 }
 
