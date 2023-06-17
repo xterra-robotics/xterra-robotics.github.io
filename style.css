@@ -1,6 +1,6 @@
 body{
     font-family: 'League Spartan'!important;
-    background-color: rgb(234, 231, 231)!important;
+    background-color: #fff5f9!important;
     font-size: larger!important;
 }
 .wrapper{
@@ -26,7 +26,7 @@ body{
 }
 .bolder{
     font-weight: 1000;
-    font-size: 200px;
+    font-size: 75px;
 }
 a{
     text-decoration: none!important;
@@ -38,12 +38,17 @@ a{
     text-align: center;
     margin: auto;
 }
+/*
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+}
+*/
 /* header */
 .header{
     background-color: white;
-    color: black;
+    color: #4e148c;
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     padding-bottom: 1%;
     /* padding: 1%; */
 }
@@ -51,26 +56,26 @@ a{
 /*     width: 12%;
     height: 60%; */
     width: 2%;
-    height: 35%;
-    margin-left: 5%;
+/*    height: 35%;*/
+    margin-left: 3%;
     margin-top: 2%;
 }
 span{
-    font-weight: bold;
-    font-size: large;
+    font-weight: bolder;
+    font-size: larger;
     position: absolute;
-    bottom: 27%;
+    bottom: 10%;
 }
 .my-nav{
-    margin-top: 1%;
+    margin-top: 2%;
     position: absolute;
     display: flex;
-    color: black;
-    right: 20%;
+    color: #4e148c;
+    right: 25%;
 }
 .my-nav a{
     margin: auto 10%;
-    color: rgb(77, 76, 76)!important;
+    color: #4e148c!important;
 }
 .dropdown{
     margin: 0 6%;
@@ -83,7 +88,7 @@ span{
     border: none;
     outline: none;
     background-color: inherit;
-    color: rgb(77, 76, 76);
+    color: #4e148c;
     font-family: inherit;
     margin: 0;
 }
@@ -93,7 +98,7 @@ span{
     background-color: white;
     margin-top: 2%;
     padding: 5%;
-    width: 111%;
+    width: 130%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -101,7 +106,7 @@ span{
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: black;
+    color: #4e148c;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -138,14 +143,14 @@ span{
 }
 .about-content{
     text-align: center;
-    color: orange;
+    color: #4e148c;
     margin: auto 25%;
     margin-top: 10%;
 }
 .about-content>:nth-child(1){
     margin-bottom: 10%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #about{
         margin-top: 5%;
     }
@@ -165,22 +170,23 @@ span{
 }
 .o-wrapper{
     /* display: flex; */
-    background-color: orange;
+    background-color: #ffde59;
     padding: 5% 20%;
 }
 .o-div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 4% 0;
 }
 .o-pannel{
     background-color: white;
     /* color: rgb(24, 4, 124); */
-    color: gray;
+    color: #4e148c;
     margin: 0 1%;
     padding: 4% 2%;
     text-align: center;
-    border-radius: 1%;
+    border-radius: 2.5%;
+    flex-basis: 40%;
     box-shadow: 3px 3px 5px 5px rgba(165, 111, 53, 0.414);
 }
 .o-pannel:hover{
@@ -202,6 +208,7 @@ span{
 /* review */
 .r-div{
     padding: 2% 20%;
+    background-color: #fff5f9
 }
 @media screen and (max-width:680px) {
     .r-div{
@@ -220,7 +227,7 @@ span{
     margin-top: 2%;
     text-align: center;
     justify-content: center;
-    color: orange;
+    color: black;
 }
 .q-carousel button{
     margin-bottom: 10%;
@@ -228,7 +235,7 @@ span{
 .r-abt{
     margin: 0 -2%;
     padding: 2% 25%;
-    background-color: white;
+    background-color: #ffde59;
 }
 .r-about{
     display: flex;
@@ -249,7 +256,7 @@ span{
     padding-left: 2%;
     margin: auto;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
     .r-abt{
         padding: 2% 5%;
     }
@@ -263,26 +270,27 @@ span{
     margin-top: 4%;
     /* padding: 0 10%; */
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 1000px){
     .r-table{
         margin: 0 -20%;
     }
 }
 .r-table>:nth-child(1){
-    font-weight: 800;
-    font-size: 230%;
-    color: rgb(74, 73, 73);
+    font-weight: 100;
+    font-size: 150%;
+    color: #4e148c;
 }
 table{
     width:100%;
     table-layout: fixed;
   }
   .tbl-header{
-    background-color: rgb(111, 111, 191);
+/*    background-color: #ff;*/
+      text-align: center;
    }
   .tbl-content{
     overflow-x:auto;
-    background-color: white;
+    background-color: #fff5f9;
     border-radius: 1%;
     margin-top: 0px;
   }
@@ -291,26 +299,26 @@ table{
     padding: 1.5%;
     text-align: left;
     vertical-align:middle;
-    font-weight: 300;
-    font-size: 90%;
-    /* color: black; */
+    font-weight: 400;
+    font-size: 95%;
+/*    color: #4e148c; */
   }
   .t-row>:nth-child(1){
-    color: orange;
-    text-align: right;
+    color: #4e148c;
+    text-align: left;
   }
   .t-row>:nth-child(2){
     color: black;
     padding-left: 10%;
   }
   .download-btn{
-    background-color: orange;
+    background-color: #ffde59;
     padding: 1%;
-    color: white;
-    font-weight: 600;
+    color: #4e148c;
+    font-weight: 1000;
     margin: auto 43%;
     border: none;
-    border-radius: 2.5%;
+    border-radius: 5%;
     margin-bottom: 1%;
   }
 /* open positions */
@@ -431,9 +439,9 @@ table{
 }
 /* footer */
 #footer{
-    padding: 2% 15%;
+    padding: 2% 10%;
     text-align: center;
-    background-color: rgb(44, 43, 43);
+    background-color: #4e148c;
     color: white;
     font-size: large;
 }
@@ -452,12 +460,12 @@ table{
     margin: 0;
 }
 .f-sections>p>strong{
-    color: orange;
+    color: #ffde59;
 }
 .f-sections>:nth-child(1){
     text-decoration: none;
     font-weight: bolder;
-    color: orange;
+    color: #ffde59;
 }
 .f-sections>li>a{
     color: white;
