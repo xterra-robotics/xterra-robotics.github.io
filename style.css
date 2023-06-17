@@ -14,6 +14,14 @@ body{
     justify-content: space-between;
     text-align: center;
 }
+
+.Container-footer{
+    /* padding-left: 5%; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 .sticky{
     position: fixed;
     top: 0;
