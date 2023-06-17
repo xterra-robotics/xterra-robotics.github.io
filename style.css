@@ -9,8 +9,10 @@ body{
 }
 .Container{
     /* padding-left: 5%; */
-    display: flex;
+    width: 100%;
+/*    display: flex;*/
     justify-content: space-between;
+    text-align: center;
 }
 .sticky{
     position: fixed;
@@ -96,9 +98,9 @@ span{
     display: none;
     position: absolute;
     background-color: white;
-    margin-top: 2%;
+    margin-top: 0%;
     padding: 5%;
-    width: 130%;
+    width: 170%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -135,17 +137,80 @@ span{
 /* about */
 
 .about{
-    background-image: url("https://previews.123rf.com/images/apopium/apopium1710/apopium171000002/87263079-3d-rendering-robotic-hand-isolated-on-white-background.jpg");
+/*    background-image: url("https://previews.123rf.com/images/apopium/apopium1710/apopium171000002/87263079-3d-rendering-robotic-hand-isolated-on-white-background.jpg");*/
+    background-image: url("/images/SexyRobot.jpg");
     background-size: cover;
     z-index: -1;
     padding: 2%;
     height: 100vh;
+    position: center;
 }
 .about-content{
     text-align: center;
-    color: #4e148c;
+    color: #ffde59;
     margin: auto 25%;
     margin-top: 10%;
+}
+
+.tagline {
+    display: inline;
+    width: 50%;
+    height: 100%;
+/*    font-size: 2em;*/
+}
+
+.text-reveal {
+/*  font-size: 2rem;*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-image: linear-gradient(to right, rgba(255, 222, 89, 1), rgba(255, 222, 89, 0.7) 33%, rgba(255, 222, 89, 0.2) 66%, rgba(255, 222, 89, 0));
+  background-repeat: no-repeat;
+  background-size: 300% 100%;
+  background-position: 0% center;
+  animation-name: ink;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  
+}
+
+@keyframes ink {
+  from {
+    background-position: 200% center;
+  }
+  to {
+    background-position: 0% center;
+/*    background-image: rgba(255, 222, 89, 1);*/
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: linear-gradient(to right, rgba(255, 255, 255, 0, ), rgba(255, 255, 255, 0, ));
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+    -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 .about-content>:nth-child(1){
     margin-bottom: 10%;
