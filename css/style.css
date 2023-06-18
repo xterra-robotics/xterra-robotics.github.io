@@ -410,7 +410,7 @@ table{
   }
   .download-btn{
     background-color: #ffde59;
-    padding: 1%;
+    padding: 0.5%;
     color: #4e148c;
     font-weight: 1000;
     margin: auto 45%;
@@ -448,7 +448,7 @@ table{
 
 .p-container>:nth-child(1){
     width: 10%;
-    color: orange;
+    color: #4e148c;
     
 }
 .p-right{
@@ -467,6 +467,7 @@ table{
     padding: 1%;
     font-weight: 1000;
     border-radius: 5%;
+    margin-top: 2%;
 }
 
 @media screen and (max-width:680px) {
