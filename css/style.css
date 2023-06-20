@@ -85,17 +85,70 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 /*    height: 100%;*/
 /*    height: 35%;*/
-    margin-left: 3%;
+/*    margin-left: 3%;*/
+/*
     margin-top: auto;
     margin-bottom: auto;
+*/
 }
-.xterra-logo a span{
+
+.xterra-logo a {
     position: relative;
+    display: block;
+    height: 100%;
+}
+
+/*
+.xterra-logo img {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+*/
+
+.xterra-logo a span{
+    position: absolute;
+    display: inline-block;
     
 /*    position: absolute;*/
 /*    bottom: 10%;*/
+    bottom: -9px;
     height: 100%;
 }
+
+@media screen and (max-width: 960px) {
+    .xterra-logo {
+        width: 35%;
+    }
+    
+    .logo {
+        position: relative;
+/*        display: inline-block;*/
+        width: 11%;
+/*        max-width: 100%;*/
+/*        height: 100%;*/
+    }
+    
+    .xterra-logo a span{
+        height: 100%;
+        bottom: -9px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .xterra-logo a span{
+        bottom: -5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .xterra-logo a span{
+        bottom: -3px;
+    }
+}
+
+
+
 .my-nav{
 /*    margin-top: 2%;*/
     position: relative;
@@ -124,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .dropdown{
     position: absolute;
+    width: 100%;
 /*    float: right;*/
     
 /*
@@ -143,14 +197,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 .dropdown-content {
+    position: relative;
     display: none;
     position: absolute;
     background-color: white;
     text-align: center;
-    width: 150%;
+    width: 200%;
     margin-left: -25%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 5;
   }
   
   /* Links inside the dropdown */
@@ -160,6 +215,8 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     display: block;
     text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
   }
   .dropdown:hover .dropdown-content{
     display: block;
@@ -175,18 +232,40 @@ h1, h2, h3, h4, h5, h6 {
     .my-nav{
 /*        display: block;*/
 /*        flex-direction: column;*/
+        position: absolute;
+        width: 40%;
         right: 0;
         background-color: white;
         padding-right: 5%;
+        z-index: 1;
     }
     
     .navbar-item {
         display: block;
-/*        width: 100%;*/
+        background-color: white;
+        width: 70%;
+        right: 5%;
+        text-align: left;
+        padding-left: 5%;
     }
     
     .hidden{
         display: none;
+    }
+    
+    .dropbtn {
+        padding: 0;
+    }
+    
+    .dropdown-content {
+        width: 120%;
+        left: 25%;
+    }
+    
+    .dropdown-content a {
+        display: block;
+/*        margin: auto;*/
+/*        float: left;*/
     }
 }
 /* about */
@@ -392,7 +471,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .r-about{
     display: flex;
-    margin-top: 4%;
+     margin-top: 8%;
+    margin-bottom: 8%;
 }
 .a-left{
     width: 50%;
@@ -413,8 +493,21 @@ h1, h2, h3, h4, h5, h6 {
     .r-abt{
         padding: 2% 5%;
     }
+    
+    .r-abt h3 {
+        margin-top: 5%;
+    }
     .q-robot{
         margin: 2% 15%;
+    }
+    .r-about {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .a-left {
+/*        width: 20%;*/
+        font-size: 0.65em;
     }
 }
 
@@ -467,16 +560,46 @@ table{
     color: black;
     padding-left: 10%;
   }
+
+.broc-download {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.broc-download .download-section {
+    position: relative;
+    width: 15%;
+    margin: auto;
+}
+
+.download-section a {
+    display: block;
+    width: 100%;
+}
+
   .download-btn{
+      position: relative;
     background-color: #ffde59;
+      width: 100%;
+      margin-left: auto; 
+      margin-right: auto;
     padding: 0.5%;
     color: #4e148c;
     font-weight: 1000;
-    margin: auto 45%;
+/*    margin: auto 45%;*/
     border: none;
     border-radius: 5%;
     margin-bottom: 1%;
   }
+
+@media screen and (max-width: 720px) {
+    .broc-download .download-section {
+        width: 40%;
+    }
+}
+
 /* open positions */
 #positions{
 /*    font-family: 'League Spartan'!important;*/
@@ -489,9 +612,14 @@ table{
 .p-heading{
     text-align: center;
 }
+
+.p-heading h1 {
+    text-align: center;
+}
+
 .p-wrapper{
     background-color: white;
-    width: 60%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -539,12 +667,16 @@ table{
     #positions{
         margin-top: 7%;
     }
+/*
     .p-wrapper{
         margin: 2% 5%;
     }
+*/
+/*
     .p-container>:nth-child(1){
         width: 20%;
     }
+*/
 }
 
 /* team */
@@ -618,6 +750,22 @@ table{
     text-align: left;
     list-style-type: none;
 }
+
+.f-sections a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.phone-number {
+    width: 200%;
+}
+
+@media screen and (max-width: 480px) {
+    .f-sections {
+        width: 30%;
+        font-size: 0.9em;
+    }
+}
 .useful{
     margin-left: 8%;
 }
@@ -679,15 +827,25 @@ table{
     overflow: hidden;
 }
 
+.carousel-item {
+    overflow: hidden;
+}
+
 .carousel-item img {
     position: relative;
-    width: 100%;
+/*    width: 100%;*/
+    height: 100%;
     z-index: -1;
 /*    height: 20%;*/
 }
 
 .carousel-caption {
-    margin-bottom: 5%;
+    margin-bottom: 6%;
+/*    bottom: 0;*/
+}
+
+.act-caption {
+    margin-bottom: 15%;
 }
 
 #quad-text {
@@ -697,4 +855,19 @@ table{
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
+    font-size: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:720px) {
+    .product-carousel {
+        height: 15em;
+    }
+    #quad-text {
+        padding-left: 8%;
+        padding-right: 8%;
+        font-size: 1.2em;
+    }
+    
 }
