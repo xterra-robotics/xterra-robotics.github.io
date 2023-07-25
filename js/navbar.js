@@ -7,8 +7,12 @@ var navbar = `
         <button class="dropbtn">Products
         </button>
         <div class="dropdown-content">
-            <a href="/robots/quadruped.html">Quadruped</a>
-            <a href="/robots/actuator.html">Actuator</a>
+            <b>Robots</b>
+            <a href="/robots/quaruped.html">Svan M2</a>
+            <a href="/robots/quadruped_m1.html">Svan M1</a>
+            <b>Actuators</b>
+            <a href="/robots/actuator_a2.html">QDD A2</a>
+            <a href="/robots/actuator.html">QDD A1</a>
         </div>
     </div>
 </div>
