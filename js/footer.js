@@ -3,7 +3,7 @@ var footer = `
                 <div class="f-sections">
                     <h2 style="font-weight: bold">xTerra Robotics</h2>
                     <p>G-508/11, Avas Vikas<br> Kanpur-208017<br> Uttar Pradesh<br> India</p>
-                    <p class="phone-number"><strong>Phone: </strong>+91 9454997163</p>
+                    <p class="phone-number"><strong>Phone: </strong>+91 9454007163</p>
                     <p><strong>Email: </strong>info@xterrarobotics.com</p>
                 </div>
                 <div class="f-sections useful">
