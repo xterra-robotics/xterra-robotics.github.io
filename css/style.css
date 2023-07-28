@@ -165,10 +165,12 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-item {
     position: relative;
     display: inline-block;
-    width: 10%;
+    width: 15%;
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .my-nav a{
@@ -202,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     background-color: white;
     text-align: center;
-    width: 100%;
+    width: 120px;
     margin-left: 25%;
     padding-top: 3%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -216,8 +218,8 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     display: block;
     text-align: center;
-      margin-left: 10%;
-      margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .dropdown:hover .dropdown-content{
     display: block;
@@ -229,11 +231,13 @@ h1, h2, h3, h4, h5, h6 {
     #bar {
         display: block;
         float: right;
-        vertical-align: middle;
+        vertical-align:middle;   
     }
 
+    
     .my-nav{
 /*        display: block;*/
+/*        border: 2px red solid;*/
 /*        flex-direction: column;*/
         position: absolute;
         width: 40%;
@@ -252,17 +256,14 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 5%;
     }
     
-    .hidden{
-        display: none;
-    }
     
     .dropbtn {
         padding: 0;
     }
     
     .dropdown-content {
-        width: 100%;
-        left: 25%;
+        width: 127%;
+        left: -31%;
         margin-left: 20%;
     }
     
@@ -271,8 +272,19 @@ h1, h2, h3, h4, h5, h6 {
 /*        margin: auto;*/
 /*        float: left;*/
     }
+
+    .hidden{
+        display: none;
+    }
 }
 /* about */
+
+@media screen and (max-width: 420px) {
+    .dropdown-content{
+        width: 95px;
+    }
+}
+
 
 .about{
 /*    background-image: url("https://previews.123rf.com/images/apopium/apopium1710/apopium171000002/87263079-3d-rendering-robotic-hand-isolated-on-white-background.jpg");*/
@@ -866,12 +878,25 @@ table{
 
 @media screen and (max-width:720px) {
     .product-carousel {
-        height: 15em;
+        height: 19em;
     }
     #quad-text {
         padding-left: 8%;
         padding-right: 8%;
         font-size: 1.2em;
     }
+
+    .actuator_img{
+        position:relative;
+        bottom: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 680px) and (max-width:1306px) {
+    .dropdown-content{
+        width: 120px;
+    }
+    
     
 }
