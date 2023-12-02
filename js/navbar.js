@@ -11,8 +11,9 @@ var navbar = `
             <a href="/robots/quadruped.html">Svan M2</a>
             <a href="/robots/quadruped_m1.html">Svan M1</a>
             <b>Actuators</b>
-            <a href="/robots/actuator_a2.html">QDD A2</a>
-            <a href="/robots/actuator.html">QDD A1</a>
+            <a href="/robots/actuator_a2.html">QDD A3</a>
+            <a href="/robots/actuator.html">QDD A2</a>
+            <a href="/robots/actuator_m1.html">QDD A1</a>
         </div>
     </div>
 </div>
